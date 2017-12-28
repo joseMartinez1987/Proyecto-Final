@@ -3,7 +3,7 @@
 
 <div class="row">
     <div class="col-md-8 back">
-       <embed  class="menu" src="assets/images/login/CARTA-DOMANI-22-JUN-17-traz15.pdf" width="800" height="900" type="">
+   
     </div>
 
     <div class="col-md-4 sidebar">
@@ -13,9 +13,23 @@
         <br><br>
         <div class="jumbotron">
             <h2 class="noticias">Noticias</h2>
-            <p class="noticias1"><a  href="https://www.sabrosia.com/2017/11/pizzeria-domani-la-pequena-italia-de-chile/" target="_blank">Pizzería Domani: La pequeña Italia de Chile.</a></p>
-            <p class="noticias1"><a href="https://turismoysabores.wordpress.com/2016/10/11/lanzan-primera-pizzeria-con-pizzeros-certificados-en-napoles/" target="_blank">LANZAN PRIMERA PIZZERÍA CON PIZZEROS CERTIFICADOS EN NÁPOLES</a></p>
-            <p class="noticias1"><a href="http://www.elantojo.cl/domani-pizzeria-bar/" target="_blank">Domani Pizzeria Bar</a></p>
+            <ul class="news">
+                <?php 
+
+                $arg =array(
+                    'post_type' => 'news',
+                    'post_per_page' => 4
+                ); 
+                $get_arg = new WP_query($arg);
+                    while ($get_arg->have_posts() ){
+                    $get_arg->the_post();
+                ?>
+                <li>    
+                   <a href="<?php the_permalink() ?>"><?php the_title()?> </a>
+                </li>
+            <?php } wp_reset_postdata();
+            ?>
+            </ul>
         </div>
 </div>
 </div>

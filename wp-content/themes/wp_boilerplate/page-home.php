@@ -1,7 +1,7 @@
 <?php get_header() ?>
 
 <div class="row">
-    <div class="col-md-8 back">
+    <div class="col-md-8">
         <p class="principal">Después de buenísimos siete años con Minga, sus parroquianos, ambiente y su buena onda, fue que decidimos profundizar nuestros conocimientos en torno a la estrella de la casa,  la noble pizza.</p>
         <p class="principal">Esto nos llevó a buscar más allá de nuestras fronteras, viajamos hasta la cuna de la pizza, Nápoles. Bastó sólo unos días para asegurarnos que la pizza ofrecida en ese lugar era realmente especial. Su ligereza, la pasión y el orgullo de los napolitanos por su producto y la calidad de éste, simplemente, nos conquistaron. Fue ahí donde aprendimos a elaborar la verdadera pizza napolitana, en la Associazione Verace Pizza Napolitana AVPN, donde comenzó a surgir la idea de crear “Domani”.</p>
         <p class="principal">En aquel curso intensivo pudimos aprender las técnicas utilizadas por antiguos puristas napolitanos, conocimos productores de harina, tomate y mozzarella y pusimos en práctica nuestro aprendizaje en dos antiguos establecimientos: Matozzi  fundada en 1833 y AL22 que opera desde 1935. AL22 es el actual campeón en el mundial de pizzerias realizado en chile el año 2016.</p>

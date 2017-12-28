@@ -5,6 +5,7 @@
 			<h2 class="etiquetas">Escribenos</h2>
 			<div class="contacto">
 		    	<div class="form-group">
+		    		<form action="" class="form">
 				  	<label class="etiquetas" for="nombre">Nombre</label>
 				     <input type="text" class="form-control" id="nombre" placeholder="Nombre"> <br><br>
 				    <label class="etiquetas" for="email">Correo electronico(requerido)</label>
@@ -14,6 +15,7 @@
 				    <label class="etiquetas" for="exampleFormControlTextarea1">Mensaje</label>
 			    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
 			    	<button type="submit" id="formulario" class="btn btn-primary">Enviar</button>
+			    	</form>
 				</div>
 		  	</div>
 		</div>

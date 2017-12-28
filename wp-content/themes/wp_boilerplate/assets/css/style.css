@@ -153,4 +153,15 @@ h1 {
 	list-style-type: none;
 }
 
+p {
+	color:white;
+	font-size: 2em;
+}
+.back {
+	margin-top: 50px;
+	padding-top: 659px;
+	background-image: url("../images/login/fc105214e631d6c9f10c73e91815b4fd.jpg");
+	background-size: 900px;
+	
+}
 
