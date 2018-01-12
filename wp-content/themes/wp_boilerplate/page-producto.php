@@ -3,7 +3,26 @@
 
 <div class="row">
     <div class="col-md-8 back">
-   
+                <table>
+            <?php 
+                $arg =array(
+                    'post_type' => 'product',
+                    'post_per_page' => 50
+                ); 
+                $get_arg = new WP_query($arg);
+                    while ($get_arg->have_posts() ){
+                    $get_arg->the_post();
+                ?>
+                    <tr>
+                        <td>
+                           <?php the_title() ?>
+                           <?php the_content()?>
+                        </td>
+                        <td>$<?php the_field('precios')?></td>
+                    </tr>
+            <?php } wp_reset_postdata();
+            ?>
+                </table>
     </div>
 
     <div class="col-md-4 sidebar">

@@ -12,7 +12,20 @@ $(".boton").on("click",function (){
 	}
 }) 
 
-$("#formulario").on("click",function(){
-	alert("Su solicitud fue enviada, gracias");
+function pregunta(){
+	if (confirm("Esta seguro que desea enviar esta informacion?")){
+	}
 	
-})
+}
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+h=checkTime(h);
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('hora').innerHTML =h+":"+m+":"+s;
+t=setTimeout(startTime(), 500);
+}
